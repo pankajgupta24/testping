@@ -2,19 +2,20 @@ package com.testbase;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
 
-public class TestBase {
+
+public class TestBase 
+	{
 	
-	public static WebDriver driver;
-	public WebDriver selectBrowser() {
+	public  WebDriver driver;
+	public void selectBrowser() 
+	
+	{
 		
-				System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "/src/test/resources/drivers/chromedriver.exe");
-				driver = new ChromeDriver();
-				driver.manage().window().maximize();
+	System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "/src/test/res/Drivers/chromedriver.exe");
+	this.driver = new ChromeDriver();
+	driver.manage().window().maximize();
 			
-		return driver;
-	
-	
-	
-}}
+		//return driver;
+	}
+}
